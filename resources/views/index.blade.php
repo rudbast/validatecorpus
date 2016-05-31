@@ -49,11 +49,11 @@
             serverSide: true,
             ajax: '{{ action('UnigramsController@index') }}',
             columns: [
-                { data: 'id', name: 'id' },
-                { data: 'word', name: 'word' },
-                { data: 'frequency', name: 'frequency' },
-                { data: 'verified', name: 'verified' },
-                { data: 'action', name: 'action', orderable: false, searchable: false }
+                { data: 'id', name: 'id', width: '5%' },
+                { data: 'word', name: 'word', width: '50%' },
+                { data: 'frequency', name: 'frequency', width: '10%', class: 'text-center' },
+                { data: 'verified', name: 'verified', width: '5%', class: 'text-center' },
+                { data: 'action', name: 'action', orderable: false, searchable: false, width: '30%', class: 'text-center' }
             ],
         });
 
