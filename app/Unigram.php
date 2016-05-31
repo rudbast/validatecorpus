@@ -12,4 +12,13 @@ class Unigram extends Model
      * @var array
      */
     protected $fillable = [ 'word', 'frequency' ];
+
+    /**
+     * The attributes that should be casted to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'verified' => 'boolean',
+    ];
 }
