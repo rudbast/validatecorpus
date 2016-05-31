@@ -1,1 +1,9 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+main {
+    margin-top: 60px;
+}
+
+#gram-data td {
+    vertical-align: middle;
+}
