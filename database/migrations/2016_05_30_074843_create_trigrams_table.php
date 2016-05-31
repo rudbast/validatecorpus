@@ -14,8 +14,9 @@ class CreateTrigramsTable extends Migration
     {
         Schema::create('trigrams', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('word')->unique();
+            $table->string('word')->index();
             $table->integer('frequency');
+            $table->boolean('verified')->default(false);
             $table->timestamps();
         });
     }
