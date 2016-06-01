@@ -91,8 +91,6 @@
             elementForm.submit(function (event) {
                 event.preventDefault();
 
-                console.log('LUL');
-
                 $.ajax({
                     url: this.action,
                     type: this.method,
